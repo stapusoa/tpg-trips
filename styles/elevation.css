@@ -1,0 +1,28 @@
+.elevation1 {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.elevation2 {
+    box-shadow: 0px 1px 4px rgba(44, 44, 44, 0.25);
+}
+
+.elevation3 {
+    box-shadow: 0px 0px 20px rgba(4, 46, 48, 0.1);
+}
+
+.elevation4 {
+    box-shadow: 0px 0px 20px rgba(128, 96, 74, 0.15);
+}
+
+.rd-edge8px {
+    border-radius: 8px;
+}
+
+.rd-edge20px {
+    border-radius: 20px;
+}
+
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+ 

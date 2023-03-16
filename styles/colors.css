@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #042E30; /* forest */
+    --secondary-color: #158481; /* new forest */
+    --bg-color: #FCF9F6; /* warm grey */
+    --contrast-color: #FFFFFF;  /* opaque white */
+    --text-color: #000000;  /* black */
+    --outline-color: #E4E5EE; /* grey-300 */
+
+    --canyon100-color: #F9E9E1;  /* PMS 7604 C */
+    --canyon300-color: #D9B59B;  /* canyon */
+    --canyon600-color: #AD754E;  /* PMS 7591 C */
+    --beach300-color: #FFFAF3;  /* beach */
+    --beach600-color: #E2CFBF;  /* PMS 2309 C */
+    --valley100-color: #A1FF3E;  /* PMS 359 C */
+    --valley300-color: #66D210; /* valley */
+    --valley600-color: #309600;  /* PMS 363 C */
+    --forest100-color: #125E5C; /* PMS 625 C */
+    --forest600-color: #011111;  /* PMS 627 C */
+    --blue100-color: #80CFFF;  /* PMS 2905 C */
+    --blue300-color: #0441A3;  /* PMS 7686 C */
+    --blue600-color: #00246B;  /* PMS 2119 C */
+    --orange100-color: #FFECB6;  /* PMS 7499 C */
+    --orange300-color: #D86C00;  /* PMS 4013 C */
+    --orange600-color: #9E4000;  /* PMS 1675 C */
+    --purple100-color: #D2BBFF;  /* PMS 256 C*/
+    --purple300-color: #581EC6;  /* PMS 2103 C */
+    --purple600-color: #31007F;  /* PMS 2105 C */
+    --cyan100-color: #B3FDFF;  /* PMS 7457 C */
+    --cyan300-color: #058EAD;  /* PMS 632 C */
+    --cyan600-color: #00536D;  /* PMS 7708 C */
+    --red100-color: #FFA1A1;  /* PMS 3572 C */
+    --red300-color: #D11915;  /* PMS 1795 C */
+    --red600-color: #7C0000;  /* PMS 1815 C */
+    --blue-accent-color: #2582E2;  /* PMS 2394 C */
+    --orange-accent-color: #FFA614;  /* PMS 1375 C*/
+    --purple-accent-color: #9E67EC;  /* PMS 2075 C */
+    --cyan-accent-color: #6FD5E4;  /* PMS 630 C */
+    --red-accent-color: #FF4C35;  /* PMS 2027 C */
+    --grey100: #F7F7FC;
+    --grey200: #EFF0F6;
+    --grey300: #E4E5EE;
+    --grey400: #DADCE2;
+    --grey500: #C7C7CC;
+    --grey600: #B0B1B7;
+    --grey700: #8B8C95;
+    --grey800: #636366;
+    --grey900: #35343C;
+  }
