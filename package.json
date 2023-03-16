@@ -1,6 +1,7 @@
 {
   "name": "tpg-trips",
   "version": "1.0.0",
+  "homepage": "https://stapusoa.github.io/tpg-trips",
   "description": "a prototype",
   "main": "index.js",
   "scripts": {
