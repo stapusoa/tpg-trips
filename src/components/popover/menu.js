@@ -10,6 +10,7 @@ import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
+import '../../styles/customStyles.css';
 import Typography from '@mui/material/Typography';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
@@ -17,17 +18,18 @@ import '../../styles/colors.css';
 import '../button/button.css';
 import '../../styles/elevation.css';
 import '../../styles/typography.css';
-import '../../styles/customStyles.css';
 import Button from '@mui/material/Button';
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import ManageSearchRoundedIcon from '@mui/icons-material/ManageSearchRounded';
 import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
 import ModeEditRoundedIcon from '@mui/icons-material/ModeEditRounded';
-import TextField from '@mui/material/TextField';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-
+import InputTripNum from '../text-field/inputTripNum.js';
+import InputEmail from '../text-field/inputEmail.js';
+import MapOutlined from '@mui/icons-material/MapOutlined';
+import ButtonAI from '../button/buttonAI.js';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -55,6 +57,7 @@ export default function PositionedMenu() {
     setOpenDialog(false);
   };
 
+  
 
   return (
     <div>
@@ -116,19 +119,30 @@ export default function PositionedMenu() {
 
       </Menu>
       <Dialog
-        fullScreen
+        
         open={openDialog}
         onClose={handleCloseDialog}
         TransitionComponent={Transition}
         PaperProps={{
           sx: {
-            padding: '0 24px',
-            backgroundColor: '#FCF9F6'
+            padding: '0 2vw 6vh 2vw',
+            backgroundColor: '#FCF9F6',
+            borderRadius: '12px',
+            boxShadow: '0px 0px 20px rgba(4, 46, 48, 0.1)'       }
+        }}
+        MuiBackdrop={{
+          sx: {
+            backgroundColor: 'rgba(0, 0, 0, 0.4)'
           }
         }}
       >
-        <AppBar sx={{ position: 'relative', backgroundColor: '#FCF9F6', boxShadow: '0', margin: '0', padding: '0', gutters: '0' }}>
-          <Toolbar sx={{ pl: 0, pr: 0 }}>
+        <AppBar sx={{ position: 'relative', backgroundColor: '#FCF9F6', boxShadow: '0' }}>
+          <Toolbar disableGutters="true"
+            PaperProps={{
+              sx: {
+                padding: '0px'
+              }
+            }}>
             <IconButton
               edge="end"
               color="#35343C"
@@ -139,35 +153,19 @@ export default function PositionedMenu() {
               <CloseIcon />
             </IconButton>
           </Toolbar>
-            <div className="h5-grey" sx={{ marginLeft: '16px', paddingLeft: '16px', ml: 2, flex: 1, color: '#35343C'}} component="div">
+            <div className="h5-grey" sx={{ marginLeft: '24px', paddingLeft: '24px', ml: 2, flex: 1, color: '#35343C'}} component="div">
               Find Trip
             </div>
         </AppBar>
-        <List>
-          <ListItem button>
-            <TextField
-                autoFocus
-                margin="dense"
-                label="Trip Number"
-                type="text"
-                fullWidth
-                variant="standard"
-              />
-          </ListItem>
-          <ListItem button>
-            <TextField
-                autoFocus
-                margin="dense"
-                id="email"
-                label="Email Address"
-                type="email"
-                fullWidth
-                variant="standard"
-              />
-          </ListItem>
-        </List>
-        <DialogActions>
-          <Button onClick={handleClose}>ADD TO PROFILE</Button>
+        <div className='input-field-container'>
+            <InputTripNum label="Trip Number" defaultText="00000000" />
+
+            <InputEmail label="Email Address" defaultText="Email" />
+
+        </div>
+        <DialogActions
+          sx={{ paddingTop: '32px'}}>
+          <ButtonAI onClick={handleClose}>ADD TO PROFILE</ButtonAI>
         </DialogActions>
       </Dialog>
     </div>
